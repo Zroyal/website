@@ -45,31 +45,31 @@
 
  a {
     cursor: pointer;
-    color: #1abc9c;
+    color: #008B8B;
     text-decoration: none;
  }
 
  a:hover {
     text-decoration:none;
-    color: #1abc9c;
+    color: #008B8B;
     opacity: 0.9;
  }
 
  hr {
-    border-top: 5px solid #1abc9c;
+     border-top: 5px solid #008B8B;
     width: 80px;
     padding-bottom: 20px;
  }
 
 
  .colour-splash {
-    color: #1abc9c;
+     color: #008B8B;
  }
 
  .section-primary span {
-    color: #1abc9c;
-    font-weight: bolder;
-    opacity: 1;
+     color: #008B8B;
+     font-weight: bolder;
+     opacity: 1;
  }
 
 
@@ -83,7 +83,7 @@
  * =================================================================== */
 
  .section-image {
- 	background: #151515 url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=1199&h=799&q=80) no-repeat center center;
+ 	background: #151515 url("../images/iran2.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -123,8 +123,8 @@
     font-size: 84px;
 }
 
-.intro h5 {
-    color: #1abc9c;
+ .intro h5 {
+     color: #008B8B;
     font-size: 2.3rem;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -211,11 +211,11 @@ section {
 }
 
 .section-primary {
-    border: #1abc9c;
+    border: #008B8B;
 }
 
-.section-colour {
-    background-color: #1abc9c;
+ .section-colour {
+    background-color: #008B8B;
     color: #fff;
 }
 
@@ -231,8 +231,8 @@ section {
     border: #fff;
 }
 
-.section-colour hr {
-    border-top: 5px solid #fff;
+ .section-colour hr {
+     border-top: 5px solid #fff;
  }
 
 
@@ -246,8 +246,8 @@ section {
     font-size: 1.7em;
 }
 
-#skills {
-    background: #151515 url(https://images.unsplash.com/photo-1456983933114-c22026990f4b?dpr=2&auto=format&crop=entropy&fit=crop&w=1280&h=720&q=80) no-repeat center center;
+ #skills {
+     background: #151515 url("../images/iran2.jpg") no-repeat center center;
     height: auto;
 }
 
@@ -257,17 +257,35 @@ section {
 
 footer {
     display: block;
-    position: static;
+    position: relative;
     bottom: 0;
-    background-color: black;
     color: #fff;
     padding: 50px 0;
+    background: #000 url("../images/iran2.jpg") no-repeat center center;
+    background-size: cover;
 
 }
 
 footer p {
     padding: 15px;
     opacity: 0.8;
+}
+
+/* Footer overlay to darken background image so text is readable */
+.footer .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 0;
+}
+
+.footer .container,
+.footer .row {
+    position: relative;
+    z-index: 1; /* ensure content sits above overlay */
 }
 
 
@@ -385,7 +403,7 @@ footer p {
     }
 
     #skills {
-        background: #151515 url(https://images.unsplash.com/photo-1456983933114-c22026990f4b?dpr=2&auto=format&crop=entropy&fit=crop&w=1280&h=720&q=80) no-repeat center center;
+        background: #151515 url("../images/iran2.jpg") no-repeat center center;
         background-position: top center;
 
     }
